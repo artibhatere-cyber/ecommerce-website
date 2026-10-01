@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="LumiShop – Your premium destination for electronics, fashion, and accessories. Shop the best curated products at unbeatable prices."
+    />
+    <meta name="keywords" content="LumiShop, electronics, clothing, accessories, online shopping" />
+    <title>LumiShop – Premium Lifestyle Store</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- ===================== PROMO BANNER ===================== -->
+    <div class="promo-banner" role="banner" aria-label="Promotional announcement">
+      &#127381; Free delivery on orders above &#8377;999 &nbsp;|&nbsp; Use code <strong>LUMI20</strong> for 20% off your first order
+      <a href="#products">Shop Now &rarr;</a>
+    </div>
+
+    <!-- ===================== HEADER / NAVBAR ===================== -->
+    <header class="site-header" id="home">
+      <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <!-- Logo -->
+        <a href="#home" class="logo" aria-label="LumiShop Home">
+          <span class="logo-icon">✦</span>
+          <span class="logo-text">Lumi<span class="logo-accent">Shop</span></span>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <ul class="nav-links" id="navLinks" role="list">
+          <li><a href="#home" class="nav-link active" aria-current="page">Home</a></li>
+          <li><a href="#products" class="nav-link">Products</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+
+        <!-- Cart Icon + Counter -->
+        <button
+          class="cart-btn"
+          id="cartBtn"
+          aria-label="Open cart"
+          title="View Cart"
+        >
+          <span class="cart-icon" aria-hidden="true">🛒</span>
+          <span class="cart-label">Cart</span>
+          <span class="cart-count" id="cartCount" aria-live="polite">0</span>
+        </button>
+
+        <!-- Hamburger Menu (Mobile) -->
+        <button
+          class="hamburger"
+          id="hamburgerBtn"
+          aria-label="Toggle navigation menu"
+          aria-expanded="false"
+          aria-controls="navLinks"
+        >
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <!-- ===================== HERO SECTION ===================== -->
+      <section class="hero" id="hero" aria-label="Hero Banner">
+        <div class="hero-bg-shapes" aria-hidden="true">
+          <div class="shape shape-1"></div>
+          <div class="shape shape-2"></div>
+          <div class="shape shape-3"></div>
+        </div>
+
+        <div class="hero-content">
+          <p class="hero-badge">New Arrivals Just Dropped</p>
+          <h1 class="hero-title">
+            Discover Products<br />
+            <span class="hero-gradient-text">You'll Actually Love</span>
+          </h1>
+          <p class="hero-subtitle">
+            Premium electronics, trendy fashion, and stylish accessories — all in one place.
+            Curated for the modern lifestyle.
+          </p>
+          <div class="hero-actions">
+            <a href="#products" class="btn btn-primary" id="heroShopNowBtn">
+              Shop Now &rarr;
+            </a>
+            <a href="#contact" class="btn btn-outline" id="heroContactBtn">Get in Touch</a>
+          </div>
+          <div class="hero-stats" aria-label="Store statistics">
+            <div class="stat">
+              <strong>500+</strong>
+              <span>Products</span>
+            </div>
+            <div class="stat-divider" aria-hidden="true"></div>
+            <div class="stat">
+              <strong>12K+</strong>
+              <span>Happy Customers</span>
+            </div>
+            <div class="stat-divider" aria-hidden="true"></div>
+            <div class="stat">
+              <strong>4.9 &#9733;</strong>
+              <span>Avg. Rating</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Visual -->
+        <div class="hero-visual" aria-hidden="true">
+          <div class="hero-card-float card-float-1">
+            <span>&#127911;</span> Headphones
+          </div>
+          <div class="hero-card-float card-float-2">
+            <span>&#8987;</span> Smart Watch
+          </div>
+          <div class="hero-card-float card-float-3">
+            <span>&#128374;</span> Sunglasses
+          </div>
+          <div class="hero-image-ring">
+            <div class="hero-image-inner">
+              <img
+                src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400&q=80"
+                alt="Featured premium watch"
+                width="320"
+                height="320"
+                loading="eager"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================== FEATURES BAR ===================== -->
+      <section class="features-bar" aria-label="Store features">
+        <div class="container">
+          <div class="feature-item">
+            <span class="feature-icon" aria-hidden="true">&#128666;</span>
+            <div>
+              <strong>Free Delivery</strong>
+              <p>On orders above &#8377;999</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <span class="feature-icon" aria-hidden="true">&#128260;</span>
+            <div>
+              <strong>Easy Returns</strong>
+              <p>30-day hassle-free returns</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <span class="feature-icon" aria-hidden="true">&#128274;</span>
+            <div>
+              <strong>Secure Payments</strong>
+              <p>100% encrypted checkout</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <span class="feature-icon" aria-hidden="true">&#127911;</span>
+            <div>
+              <strong>24/7 Support</strong>
+              <p>Always here to help you</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================== PRODUCTS SECTION ===================== -->
+      <section class="products-section" id="products" aria-labelledby="productsHeading">
+        <div class="container">
+          <div class="section-header">
+            <p class="section-tag">Our Collection</p>
+            <h2 id="productsHeading" class="section-title">Featured Products</h2>
+            <p class="section-subtitle">
+              Handpicked items for every lifestyle — quality you can trust, prices you'll love.
+            </p>
+          </div>
+
+          <!-- Category Filter Buttons -->
+          <div class="filter-bar" role="group" aria-label="Filter products by category">
+            <button class="filter-btn active" data-filter="all" id="filterAll">All</button>
+            <button class="filter-btn" data-filter="Electronics" id="filterElectronics">Electronics</button>
+            <button class="filter-btn" data-filter="Clothing" id="filterClothing">Clothing</button>
+            <button class="filter-btn" data-filter="Accessories" id="filterAccessories">Accessories</button>
+          </div>
+
+          <!-- Product Grid -->
+          <div class="products-grid" id="productsGrid" role="list">
+
+            <!-- Product 1 - SoundWave Pro X -->
+            <article class="product-card" data-category="Electronics" role="listitem">
+              <div class="product-image-wrap">
+                <img
+                  src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400&q=80"
+                  alt="SoundWave Pro X Wireless Headphones"
+                  class="product-img"
+                  loading="lazy"
+                  width="400"
+                  height="300"
+                />
+                <span class="product-badge badge-new">New</span>
+                <div class="product-overlay">
+                  <button class="btn-icon" onclick="openModal(0)" aria-label="View details for SoundWave Pro X">&#128065;</button>
+                </div>
+              </div>
+              <div class="product-info">
+                <span class="product-category">Electronics</span>
+                <h3 class="product-name">SoundWave Pro X</h3>
+                <div class="product-rating" aria-label="Rating: 4.8 out of 5">
+                  <span class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                  <span class="rating-count">(1,284)</span>
+                </div>
+                <p class="product-desc">Over-ear wireless headphones with 40hr battery, active noise cancellation, and deep bass for an immersive listening experience.</p>
+                <div class="product-footer">
+                  <span class="product-price">&#8377;4,299</span>
+                  <div class="product-actions">
+                    <button class="btn btn-cart" onclick="addToCart(this,'SoundWave Pro X','&#8377;4,299')" id="cartBtn-0" aria-label="Add SoundWave Pro X to cart">Add to Cart &#128722;</button>
+                    <button class="btn btn-details" onclick="openModal(0)" id="detailsBtn-0" aria-label="View details for SoundWave Pro X">Details</button>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- Product 2 - NexaWrist S3 -->
+            <article class="product-card" data-category="Electronics" role="listitem">
+              <div class="product-image-wrap">
+                <img
+                  src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400&q=80"
+                  alt="NexaWrist S3 Smart Watch"
+                  class="product-img"
+                  loading="lazy"
+                  width="400"
+                  height="300"
+                />
+                <span class="product-badge badge-hot">Hot</span>
+                <div class="product-overlay">
+                  <button class="btn-icon" onclick="openModal(1)" aria-label="View details for NexaWrist S3">&#128065;</button>
+                </div>
+              </div>
+              <div class="product-info">
+                <span class="product-category">Electronics</span>
+                <h3 class="product-name">NexaWrist S3</h3>
+                <div class="product-rating" aria-label="Rating: 4.9 out of 5">
+                  <span class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                  <span class="rating-count">(2,571)</span>
+                </div>
+                <p class="product-desc">Smart watch with AMOLED display, heart rate monitoring, GPS tracking, and 7-day battery life in a sleek aluminium build.</p>
+                <div class="product-footer">
+                  <span class="product-price">&#8377;7,999</span>
+                  <div class="product-actions">
+                    <button class="btn btn-cart" onclick="addToCart(this,'NexaWrist S3','&#8377;7,999')" id="cartBtn-1" aria-label="Add NexaWrist S3 to cart">Add to Cart &#128722;</button>
+                    <button class="btn btn-details" onclick="openModal(1)" id="detailsBtn-1" aria-label="View details for NexaWrist S3">Details</button>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- Product 3 - AirPulse TWS -->
+            <article class="product-card" data-category="Electronics" role="listitem">
+              <div class="product-image-wrap">
+                <img
+                  src="https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=400&q=80"
+                  alt="AirPulse TWS Earbuds"
+                  class="product-img"
+                  loading="lazy"
+                  width="400"
+                  height="300"
+                />
+                <div class="product-overlay">
+                  <button class="btn-icon" onclick="openModal(2)" aria-label="View details for AirPulse TWS">&#128065;</button>
+                </div>
+              </div>
+              <div class="product-info">
+                <span class="product-category">Electronics</span>
+                <h3 class="product-name">AirPulse TWS</h3>
+                <div class="product-rating" aria-label="Rating: 4.6 out of 5">
+                  <span class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+                  <span class="rating-count">(876)</span>
+                </div>
+                <p class="product-desc">True wireless stereo earbuds with 30hr total playtime, IPX5 water resistance, and crystal-clear call quality.</p>
+                <div class="product-footer">
+                  <span class="product-price">&#8377;2,499</span>
+                  <div class="product-actions">
+                    <button class="btn btn-cart" onclick="addToCart(this,'AirPulse TWS','&#8377;2,499')" id="cartBtn-2" aria-label="Add AirPulse TWS to cart">Add to Cart &#128722;</button>
+                    <button class="btn btn-details" onclick="openModal(2)" id="detailsBtn-2" aria-label="View details for AirPulse TWS">Details</button>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- Product 4 - UrbanEdge Jacket -->
+            <article class="product-card" data-category="Clothing" role="listitem">
+              <div class="product-image-wrap">
+                <img
+                  src="https://images.unsplash.com/photo-1551028719-00167b16eac5?w=400&q=80"
+                  alt="UrbanEdge Leather Jacket"
+                  class="product-img"
+                  loading="lazy"
+                  width="400"
+                  height="300"
+                />
+                <span class="product-badge badge-new">New</span>
+                <div class="product-overlay">
+                  <button class="btn-icon" onclick="openModal(3)" aria-label="View details for UrbanEdge Jacket">&#128065;</button>
+                </div>
+              </div>
+              <div class="product-info">
+                <span class="product-category">Clothing</span>
+                <h3 class="product-name">UrbanEdge Jacket</h3>
+                <div class="product-rating" aria-label="Rating: 4.7 out of 5">
+                  <span class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+                  <span class="rating-count">(543)</span>
+                </div>
+                <p class="product-desc">Premium genuine leather biker jacket with quilted lining, YKK zippers, and a timeless street-ready silhouette.</p>
+                <div class="product-footer">
+                  <span class="product-price">&#8377;5,799</span>
+                  <div class="product-actions">
+                    <button class="btn btn-cart" onclick="addToCart(this,'UrbanEdge Jacket','&#8377;5,799')" id="cartBtn-3" aria-label="Add UrbanEdge Jacket to cart">Add to Cart &#128722;</button>
+                    <button class="btn btn-details" onclick="openModal(3)" id="detailsBtn-3" aria-label="View details for UrbanEdge Jacket">Details</button>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- Product 5 - CloudComfort Hoodie -->
+            <article class="product-card" data-category="Clothing" role="listitem">
+              <div class="product-image-wrap">
+                <img
+                  src="https://images.unsplash.com/photo-1556821840-3a63f15732ce?w=400&q=80"
+                  alt="CloudComfort Oversized Hoodie"
+                  class="product-img"
+                  loading="lazy"
+                  width="400"
+                  height="300"
+                />
+                <div class="product-overlay">
+                  <button class="btn-icon" onclick="openModal(4)" aria-label="View details for CloudComfort Hoodie">&#128065;</button>
+                </div>
+              </div>
+              <div class="product-info">
+                <span class="product-category">Clothing</span>
+                <h3 class="product-name">CloudComfort Hoodie</h3>
+                <div class="product-rating" aria-label="Rating: 4.5 out of 5">
+                  <span class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+                  <span class="rating-count">(1,102)</span>
+                </div>
+                <p class="product-desc">Ultra-soft 320gsm French terry cotton hoodie. Oversized fit, kangaroo pocket, ribbed cuffs — perfect for all seasons.</p>
+                <div class="product-footer">
+                  <span class="product-price">&#8377;1,899</span>
+                  <div class="product-actions">
+                    <button class="btn btn-cart" onclick="addToCart(this,'CloudComfort Hoodie','&#8377;1,899')" id="cartBtn-4" aria-label="Add CloudComfort Hoodie to cart">Add to Cart &#128722;</button>
+                    <button class="btn btn-details" onclick="openModal(4)" id="detailsBtn-4" aria-label="View details for CloudComfort Hoodie">Details</button>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- Product 6 - VistaPolar Pro -->
+            <article class="product-card" data-category="Accessories" role="listitem">
+              <div class="product-image-wrap">
+                <img
+                  src="https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=400&q=80"
+                  alt="VistaPolar Pro Sunglasses"
+                  class="product-img"
+                  loading="lazy"
+                  width="400"
+                  height="300"
+                />
+                <span class="product-badge badge-hot">Hot</span>
+                <div class="product-overlay">
+                  <button class="btn-icon" onclick="openModal(5)" aria-label="View details for VistaPolar Pro">&#128065;</button>
+                </div>
+              </div>
+              <div class="product-info">
+                <span class="product-category">Accessories</span>
+                <h3 class="product-name">VistaPolar Pro</h3>
+                <div class="product-rating" aria-label="Rating: 4.8 out of 5">
+                  <span class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                  <span class="rating-count">(733)</span>
+                </div>
+                <p class="product-desc">Polarized UV400 aviator sunglasses with scratch-resistant lenses, lightweight titanium frame, and a premium carry case.</p>
+                <div class="product-footer">
+                  <span class="product-price">&#8377;1,499</span>
+                  <div class="product-actions">
+                    <button class="btn btn-cart" onclick="addToCart(this,'VistaPolar Pro','&#8377;1,499')" id="cartBtn-5" aria-label="Add VistaPolar Pro to cart">Add to Cart &#128722;</button>
+                    <button class="btn btn-details" onclick="openModal(5)" id="detailsBtn-5" aria-label="View details for VistaPolar Pro">Details</button>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- Product 7 - VeraTimex Classic -->
+            <article class="product-card" data-category="Accessories" role="listitem">
+              <div class="product-image-wrap">
+                <img
+                  src="https://images.unsplash.com/photo-1524592094714-0f0654e20314?w=400&q=80"
+                  alt="VeraTimex Classic Analog Watch"
+                  class="product-img"
+                  loading="lazy"
+                  width="400"
+                  height="300"
+                />
+                <div class="product-overlay">
+                  <button class="btn-icon" onclick="openModal(6)" aria-label="View details for VeraTimex Classic">&#128065;</button>
+                </div>
+              </div>
+              <div class="product-info">
+                <span class="product-category">Accessories</span>
+                <h3 class="product-name">VeraTimex Classic</h3>
+                <div class="product-rating" aria-label="Rating: 4.9 out of 5">
+                  <span class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                  <span class="rating-count">(412)</span>
+                </div>
+                <p class="product-desc">Swiss-inspired minimalist analog watch with sapphire glass, genuine leather strap, and 5ATM water resistance.</p>
+                <div class="product-footer">
+                  <span class="product-price">&#8377;3,199</span>
+                  <div class="product-actions">
+                    <button class="btn btn-cart" onclick="addToCart(this,'VeraTimex Classic','&#8377;3,199')" id="cartBtn-6" aria-label="Add VeraTimex Classic to cart">Add to Cart &#128722;</button>
+                    <button class="btn btn-details" onclick="openModal(6)" id="detailsBtn-6" aria-label="View details for VeraTimex Classic">Details</button>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- Product 8 - SwiftStride Runner -->
+            <article class="product-card" data-category="Clothing" role="listitem">
+              <div class="product-image-wrap">
+                <img
+                  src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400&q=80"
+                  alt="SwiftStride Runner Shoes"
+                  class="product-img"
+                  loading="lazy"
+                  width="400"
+                  height="300"
+                />
+                <div class="product-overlay">
+                  <button class="btn-icon" onclick="openModal(7)" aria-label="View details for SwiftStride Runner">&#128065;</button>
+                </div>
+              </div>
+              <div class="product-info">
+                <span class="product-category">Clothing</span>
+                <h3 class="product-name">SwiftStride Runner</h3>
+                <div class="product-rating" aria-label="Rating: 4.6 out of 5">
+                  <span class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+                  <span class="rating-count">(988)</span>
+                </div>
+                <p class="product-desc">Lightweight mesh running shoes with CloudFoam midsole, breathable upper, and anti-slip rubber outsole. Available in 5 colours.</p>
+                <div class="product-footer">
+                  <span class="product-price">&#8377;2,999</span>
+                  <div class="product-actions">
+                    <button class="btn btn-cart" onclick="addToCart(this,'SwiftStride Runner','&#8377;2,999')" id="cartBtn-7" aria-label="Add SwiftStride Runner to cart">Add to Cart &#128722;</button>
+                    <button class="btn btn-details" onclick="openModal(7)" id="detailsBtn-7" aria-label="View details for SwiftStride Runner">Details</button>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+          </div><!-- /products-grid -->
+        </div><!-- /container -->
+      </section>
+
+      <!-- ===================== CONTACT SECTION ===================== -->
+      <section class="contact-section" id="contact" aria-labelledby="contactHeading">
+        <div class="container contact-grid">
+          <!-- Contact Info Panel -->
+          <div class="contact-info">
+            <p class="section-tag">Say Hello</p>
+            <h2 id="contactHeading" class="section-title">Get in Touch</h2>
+            <p class="contact-intro">
+              Have a question, a collaboration idea, or just want to say hi? We'd love to hear from you.
+              Fill in the form and we'll respond within 24 hours.
+            </p>
+            <ul class="contact-details" aria-label="Contact details">
+              <li>
+                <span class="contact-icon" aria-hidden="true">&#128231;</span>
+                <div>
+                  <strong>Email Us</strong>
+                  <a href="mailto:hello@lumishop.in">hello@lumishop.in</a>
+                </div>
+              </li>
+              <li>
+                <span class="contact-icon" aria-hidden="true">&#128222;</span>
+                <div>
+                  <strong>Call Us</strong>
+                  <a href="tel:+918800556677">+91 88005 56677</a>
+                </div>
+              </li>
+              <li>
+                <span class="contact-icon" aria-hidden="true">&#128205;</span>
+                <div>
+                  <strong>Find Us</strong>
+                  <span>42, Lumi Tower, Cyber City, Bengaluru - 560103</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Contact Form -->
+          <form class="contact-form" id="contactForm" novalidate aria-label="Contact form">
+            <div class="form-group">
+              <label for="userName">Your Name</label>
+              <input type="text" id="userName" name="userName" placeholder="e.g. Priya Sharma" autocomplete="name" aria-required="true" />
+              <span class="field-error" id="nameError" role="alert"></span>
+            </div>
+            <div class="form-group">
+              <label for="userEmail">Email Address</label>
+              <input type="email" id="userEmail" name="userEmail" placeholder="e.g. priya@email.com" autocomplete="email" aria-required="true" />
+              <span class="field-error" id="emailError" role="alert"></span>
+            </div>
+            <div class="form-group">
+              <label for="userMessage">Your Message</label>
+              <textarea id="userMessage" name="userMessage" placeholder="Type your message here..." rows="5" aria-required="true"></textarea>
+              <span class="field-error" id="messageError" role="alert"></span>
+            </div>
+            <button type="submit" class="btn btn-primary form-submit-btn" id="contactSubmitBtn">Send Message</button>
+            <div class="form-alert" id="formAlert" role="alert" aria-live="polite"></div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer class="site-footer" aria-label="Site footer">
+      <div class="container footer-grid">
+        <!-- Brand Column -->
+        <div class="footer-brand">
+          <a href="#home" class="logo footer-logo" aria-label="LumiShop Home">
+            <span class="logo-icon">&#10022;</span>
+            <span class="logo-text">Lumi<span class="logo-accent">Shop</span></span>
+          </a>
+          <p class="footer-tagline">
+            Your one-stop destination for premium electronics, trending fashion, and curated
+            accessories — delivered with care.
+          </p>
+          <div class="social-links" aria-label="Social media links">
+            <a href="#" class="social-link" aria-label="LumiShop on Instagram">&#128247;</a>
+            <a href="#" class="social-link" aria-label="LumiShop on Twitter">&#128038;</a>
+            <a href="#" class="social-link" aria-label="LumiShop on LinkedIn">&#128188;</a>
+            <a href="#" class="social-link" aria-label="LumiShop on YouTube">&#9654;</a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <nav class="footer-links" aria-label="Quick links">
+          <h3 class="footer-heading">Quick Links</h3>
+          <ul role="list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms &amp; Conditions</a></li>
+          </ul>
+        </nav>
+
+        <!-- Categories -->
+        <nav class="footer-links" aria-label="Product categories">
+          <h3 class="footer-heading">Categories</h3>
+          <ul role="list">
+            <li><a href="#products">Electronics</a></li>
+            <li><a href="#products">Clothing</a></li>
+            <li><a href="#products">Accessories</a></li>
+            <li><a href="#products">New Arrivals</a></li>
+            <li><a href="#products">Best Sellers</a></li>
+          </ul>
+        </nav>
+
+        <!-- Contact Info -->
+        <div class="footer-contact" aria-label="Footer contact info">
+          <h3 class="footer-heading">Contact Us</h3>
+          <address>
+            <p>&#128231; <a href="mailto:hello@lumishop.in">hello@lumishop.in</a></p>
+            <p>&#128222; <a href="tel:+918800556677">+91 88005 56677</a></p>
+            <p>&#128205; 42, Lumi Tower, Cyber City,<br />Bengaluru - 560103, India</p>
+          </address>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 LumiShop. All rights reserved. Crafted with &#10084;&#65039; for premium shoppers.</p>
+      </div>
+    </footer>
+
+    <!-- ===================== PRODUCT DETAIL MODAL ===================== -->
+    <div
+      class="modal-overlay"
+      id="modalOverlay"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="modalProductName"
+      aria-hidden="true"
+    >
+      <div class="modal-box">
+        <button class="modal-close" id="modalCloseBtn" aria-label="Close product details">&#10005;</button>
+        <div class="modal-content">
+          <div class="modal-image-wrap">
+            <img src="" alt="" id="modalImage" class="modal-img" width="400" height="400" />
+          </div>
+          <div class="modal-details">
+            <span class="modal-category" id="modalCategory"></span>
+            <h2 class="modal-product-name" id="modalProductName"></h2>
+            <p class="modal-price" id="modalPrice"></p>
+            <p class="modal-description" id="modalDescription"></p>
+            <ul class="modal-specs" id="modalSpecs" aria-label="Product specifications"></ul>
+            <button class="btn btn-primary modal-cart-btn" id="modalCartBtn" aria-label="Add product to cart from modal">Add to Cart &#128722;</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===================== TOAST NOTIFICATION ===================== -->
+    <div class="toast" id="toastNotification" role="status" aria-live="polite" aria-atomic="true"></div>
+
+    <!-- ===================== CART SIDEBAR ===================== -->
+    <aside class="cart-sidebar" id="cartSidebar" aria-label="Shopping cart" aria-hidden="true">
+      <div class="cart-sidebar-header">
+        <h2>Your Cart &#128722;</h2>
+        <button class="cart-close-btn" id="cartCloseBtn" aria-label="Close cart">&#10005;</button>
+      </div>
+      <ul class="cart-items-list" id="cartItemsList" role="list"></ul>
+      <div class="cart-empty" id="cartEmpty">
+        <p>&#128717; Your cart is empty!</p>
+        <a href="#products" class="btn btn-primary" id="cartShopNowBtn">Shop Now</a>
+      </div>
+      <div class="cart-total" id="cartTotal" aria-live="polite">
+        <strong>Total: <span id="cartTotalAmount">&#8377;0</span></strong>
+        <button class="btn btn-primary" id="checkoutBtn" aria-label="Proceed to checkout">Checkout &rarr;</button>
+      </div>
+    </aside>
+    <!-- Cart Sidebar Backdrop -->
+    <div class="cart-backdrop" id="cartBackdrop" aria-hidden="true"></div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+  </body>
+</html>
